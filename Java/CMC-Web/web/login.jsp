@@ -5,7 +5,6 @@
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@ taglib uri="/struts-tags" prefix="s" %>  
 <!DOCTYPE html>
 <html>
     <head>
@@ -14,12 +13,26 @@
         <title>JSP Page</title>
     </head>
     <body>
-        
-<s:form action="login.action">  
-<s:textfield name="username" label="Name"></s:textfield>  
-<s:password name="password" label="Password"></s:password>  
-<s:submit value="login"></s:submit>  
-</s:form>  
 
+<div class="content_right" style="width:100%;">
+	<h1 align="center"><p class="pr">Đăng nhập</p></h1>
+    <form action="login.action" method="post">
+    <table width="500"  align="center">
+    	<tr>
+        	<td>Username</td>
+            <td><input type="text" name="username" placeholder="Nhập username..." /></td>
+        </tr>
+        <tr>
+        	<td>Password</td>
+            <td><input type="password" name="password" placeholder="Nhập password..." /></td>
+        </tr>
+        <tr>
+        	<td><input type="submit" name="login" value="Đăng Nhập" /></td>
+
+        </tr>
+    </table>
+</form>
+
+</div>
     </body>
 </html>

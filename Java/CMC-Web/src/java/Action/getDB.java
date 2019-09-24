@@ -18,9 +18,9 @@ import java.util.List;
  */
 public class getDB {
 
-        public static String  getInfo(String u, int p){
+        public static String  getInfo(String u, String p){
             String usern = u;
-            int passw = p;
+            String passw = p;
             String flag = "";
 
             String sql = "SELECT * FROM user WHERE username ='"+usern+"' AND password = '"+passw+"'";

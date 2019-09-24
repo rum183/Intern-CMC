@@ -15,7 +15,7 @@ import com.opensymphony.xwork2.ActionSupport;
 public class Login extends ActionSupport{
     
     private String username;
-    private int password;
+    private String password;
 
     public String getUsername() {
         return username;
@@ -25,11 +25,11 @@ public class Login extends ActionSupport{
         this.username = username;
     }
 
-    public int getPassword() {
+    public String getPassword() {
         return password;
     }
 
-    public void setPassword(int password) {
+    public void setPassword(String password) {
         this.password = password;
     }
     
